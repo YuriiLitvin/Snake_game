@@ -1,5 +1,7 @@
 from turtle import Turtle
-Y_POSITION = 270
+Y_COORD = 270
+ALIGNMENT = "center"
+FONT = ("Impact", 16, "normal")
 
 
 class Scoreboard(Turtle):
@@ -10,12 +12,15 @@ class Scoreboard(Turtle):
         self.penup()
         self.color("white")
         self.ht()
-        self.sety(Y_POSITION)
-        self.count()
+        self.sety(Y_COORD)
+        self.update_scoreboard()
 
-    def count(self):
-        self.clear()
-        self.write(f"SCORE: {self.score}", False, align="center", font=('Impact', 16, 'normal'))
+    def update_scoreboard(self):
+        self.write(f"SCORE: {self.score}", False, align=ALIGNMENT, font=FONT)
+
+    def increase_score(self):
         self.score += 1
+        self.clear()
+        self.update_scoreboard()
 
 
