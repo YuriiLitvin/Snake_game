@@ -1,4 +1,4 @@
-from turtle import Screen
+from turtle import Screen, Turtle
 from snake import Snake
 import time
 
@@ -21,8 +21,6 @@ while is_game_on:
     screen.update()
     time.sleep(0.1)
     snake.move()
-
-
 
 
 screen.exitonclick()
