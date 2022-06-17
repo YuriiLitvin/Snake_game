@@ -22,8 +22,7 @@ while is_game_on:
     time.sleep(0.1)
     snake.move()
 
-# screen.listen()
-# screen.onkey(turn_left, "a")
+
 
 
 screen.exitonclick()
