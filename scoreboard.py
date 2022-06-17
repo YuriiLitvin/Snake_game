@@ -15,7 +15,7 @@ class Scoreboard(Turtle):
 
     def count(self):
         self.clear()
-        self.write(f"SCORE: {self.score}", False, align="center", font=('Arial', 16, 'normal'))
+        self.write(f"SCORE: {self.score}", False, align="center", font=('Impact', 16, 'normal'))
         self.score += 1
 
 
